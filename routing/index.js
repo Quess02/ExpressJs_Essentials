@@ -15,8 +15,8 @@ const loans = require('./routes/api/loans');
  * create "admin" subdomain...this should appear
  * before all other routes
  */
-//app.use(vhost('admin.*',admin));
-app.use('/admin', admin);
+app.use(vhost('admin.*',admin));
+//app.use('/admin', admin);
 
 //loans api
 app.use('/api/loans', loans);
